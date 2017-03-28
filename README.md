@@ -8,8 +8,8 @@ Le but de ce projet sera l'implémentation pour Android du jeu Quarto.
 
 Le jeu est composé
 
- * D'un plateau du jeu de 4x4 cases
- * 16 pièces: noire ou blanche, ronde ou carrée, a bordure doulbe ou non, contenant une croix ou non.
+ * d'un plateau du jeu de 4x4 cases
+ * de 16 pièces: noire ou blanche, ronde ou carrée, a bordure doulbe ou non, contenant une croix ou non.
 
 A chaque tour:
 
@@ -83,6 +83,10 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 ## Menu
 
 ### Objectifs
+
+ * Créer une application contenant deux activité. Un bouton présent sur la première permet, une fois activé de passer à la seconde.
+ * Utiliser le Moniteur Android pour logger le comportement de l'application.
+
 ![Menu](img/doc/Menu.png)
 
 ### Détails
@@ -91,13 +95,17 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
 
 ## Plateau
+
 ### Objectifs
+
  * Afficher plateau, boutons et images
+
 ![Menu](img/doc/Debut.png)
 
 ### Détails
 
  * Les images des pièces se trouvent dans `img/pieces`
+ * Un layout de type TableLayout et des Widgets de type ImageButton peuvent être utilisés.
 
 ## Premier coup
 
@@ -106,23 +114,35 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
 
 ## Logique du jeu
+
 ### Objectifs
+
 ![Menu](img/doc/Coup.png)
 
  * Les classes Piece, Joueur, Partie
  * Les event listener
- * Les machine à Etat
+ * Les machines à état ([Aide ici](Machine.md))
 
 ![Menu](img/doc/FSM.png)
 
 ## Améliorations
+
 ### Objectifs
 
-Son, boucler le menu, etc
+ * Ajouter un ecran de victoire
+
+![Menu](img/doc/Coup.png)
+
+ * Ajouter un son et/ou une vibration lorsqu'une pièce est posée.
 
 ![Menu](img/doc/Fin.png)
 
+ * Changer la couleur du fond en fonction du joueur don c'est le tour.
+
+ * Remplacer la vue de la main du joueur qui a choisi la pièce, lorsque son adversaire doit la pauser, par la pièce en question seule.
+
 ## En ligne
+
 ### Objectifs
 
 A venir
