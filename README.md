@@ -92,7 +92,7 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
 ## Plateau
 ### Objectifs
-%Afficher tableau boutons et images
+ * Afficher plateau, boutons et images
 ![Menu](img/doc/Debut.png)
 
 ### Détails
@@ -102,22 +102,24 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 ## Premier coup
 
 ### Objectifs
-%Détailler les classes
-%Les event listener
-%Les machine à Etat
 ![Menu](img/doc/Pick.png)
 
 
 ## Logique du jeu
 ### Objectifs
-%Détailler les classes
-%Les event listener
-%Les machine à Etat
 ![Menu](img/doc/Coup.png)
 
+ * Les classes Piece, Joueur, Partie
+ * Les event listener
+ * Les machine à Etat
+
+![Menu](img/doc/FSM.png)
+
 ## Améliorations
-\subsection{Objectifs}
-%Son, boucler le menu, etc
+### Objectifs
+
+Son, boucler le menu, etc
+
 ![Menu](img/doc/Fin.png)
 
 ## En ligne
