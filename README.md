@@ -29,11 +29,11 @@ L'application finale sera composé d'au moins:
 
  * Une fois dans la partie le **Plateau** de jeu ainsi que la main du joueur dont c'est le tour apparaîtront.
 
-![Menu](img/doc/Debut.png)
-![Menu](img/doc/Pick.png)
-![Menu](img/doc/Place.png)
-![Menu](img/doc/Coup.png)
-![Menu](img/doc/Fin.png)
+![Menu](img/doc_mini/Debut.png)
+![Menu](img/doc_mini/Pick.png)
+![Menu](img/doc_mini/Place.png)
+![Menu](img/doc_mini/Coup.png)
+![Menu](img/doc_mini/Fin.png)
 
 
 
@@ -87,7 +87,7 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
  * Créer une application contenant deux activité. Un bouton présent sur la première permet, une fois activé de passer à la seconde.
  * Utiliser le Moniteur Android pour logger le comportement de l'application.
 
-![Menu](img/doc/Menu.png)
+![Menu](img/doc_mini/Menu.png)
 
 ### Détails
 
@@ -100,7 +100,7 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
  * Afficher plateau, boutons et images
 
-![Menu](img/doc/Debut.png)
+![Menu](img/doc_mini/Debut.png)
 
 ### Détails
 
@@ -110,14 +110,14 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 ## Premier coup
 
 ### Objectifs
-![Menu](img/doc/Pick.png)
+![Menu](img/doc_mini/Pick.png)
 
 
 ## Logique du jeu
 
 ### Objectifs
 
-![Menu](img/doc/Coup.png)
+![Menu](img/doc_mini/Coup.png)
 
  * Les classes Piece, Joueur, Partie
  * Les event listener
@@ -131,11 +131,11 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
  * Ajouter un ecran de victoire
 
-![Menu](img/doc/Coup.png)
+![Menu](img/doc_mini/Coup.png)
 
  * Ajouter un son et/ou une vibration lorsqu'une pièce est posée.
 
-![Menu](img/doc/Fin.png)
+![Menu](img/doc_mini/Fin.png)
 
  * Changer la couleur du fond en fonction du joueur don c'est le tour.
 
