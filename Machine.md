@@ -1,4 +1,4 @@
-#Machine a état
+# Machine a état
 
 Implémentation simple d'une machine à état contenant 3 états (1, 2 et 3) et 4 transitions (1 -> 2, 2 -> 3, 3 -> 1 et 3 -> 2).
 

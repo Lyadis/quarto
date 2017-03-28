@@ -25,7 +25,7 @@ L'application finale sera composé d'au moins:
 
  * Un **Menu** qui servira d'écran d'accueil et qui permettra de lancer une partie.
 
-![Menu](img/doc/Menu.png)
+![Menu](img/doc_mini/Menu.png)
 
  * Une fois dans la partie le **Plateau** de jeu ainsi que la main du joueur dont c'est le tour apparaîtront.
 
@@ -110,7 +110,7 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 ## Premier coup
 
 ### Objectifs
-![Menu](img/doc_mini/Pick.png)
+![Menu](img/doc_mini/Place.png)
 
 
 ## Logique du jeu
