@@ -110,6 +110,12 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 ## Premier coup
 
 ### Objectifs
+
+ * Créer les event listener sur la main pour récupérer la pièce choisie
+ * Créer les event listener sur le plateau pour récupérer la position
+ * Effacer la pièce de la main (et rendre le bouton vide non clickable)
+ * L'afficher sur le plateau (et rendre la case non clickable)
+
 ![Menu](img/doc_mini/Place.png)
 
 
@@ -119,8 +125,9 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
 ![Menu](img/doc_mini/Coup.png)
 
+ * Récupérer les images, les boutons de la main et du plateau et les mettre dans des tableaux pour y acceder facilement depuis le code.
+
  * Les classes Piece, Joueur, Partie
- * Les event listener
  * Les machines à état ([Aide ici](Machine.md))
 
 ![Menu](img/doc/FSM.png)
