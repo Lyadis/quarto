@@ -127,6 +127,32 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
  * Les images des pièces se trouvent dans `img/pieces`
  * Un layout de type TableLayout et des Widgets de type ImageButton peuvent être utilisés.
 
+
+
+## Premier coup
+
+### Objectifs
+
+ * Créer les event listener sur la main pour récupérer la pièce choisie
+ * Créer les event listener sur le plateau pour récupérer la position
+ * Effacer la pièce de la main (et rendre le bouton vide non clickable)
+ * L'afficher sur le plateau (et rendre la case non clickable)
+
+![Menu](img/doc_mini/Place.png)
+
+### Détails
+
+
+```java
+	//Changer l'image d'un bouton
+    button.setImageResource(myImage);
+
+	//centrer l'image
+    button.setScaleType(ImageView.ScaleType.FIT_CENTER);
+
+	//Rendre le bouton non clickable
+    button.setClickable(false);
+```
 Lorsque l'on a plusieurs boutons du même type et/ou que l'on souhaite leur faire déclancher des actions qui dépendent du boutons, il n'est pas très pratique de déclarer les event listener un par un. Dans ce cas on peut déclarer une classe qui implémente View.OnClickListener comme ceci: 
 
 ```java
@@ -150,18 +176,6 @@ On peut par la suite l'utiliser comme ceci
 	pieceButton_1_3.setOnClickListener(new CaseListener(1,3));
 ```
 
-## Premier coup
-
-### Objectifs
-
- * Créer les event listener sur la main pour récupérer la pièce choisie
- * Créer les event listener sur le plateau pour récupérer la position
- * Effacer la pièce de la main (et rendre le bouton vide non clickable)
- * L'afficher sur le plateau (et rendre la case non clickable)
-
-![Menu](img/doc_mini/Place.png)
-
-
 ## Logique du jeu
 
 ### Objectifs
@@ -171,6 +185,7 @@ On peut par la suite l'utiliser comme ceci
  * Récupérer les images, les boutons de la main et du plateau et les mettre dans des tableaux pour y acceder facilement depuis le code.
 
  * Les classes Piece, Joueur, Partie
+
  * Les machines à état ([Aide ici](Machine.md))
 
 ![Menu](img/doc/FSM.png)
