@@ -93,24 +93,26 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
  * Voir sur [OpenClassroom](https://openclassrooms.com/courses/developpez-une-application-pour-android/)
 
+#### Event Listener
+
 ```java
 
     Button playButton = (Button) findViewById(R.id.bouton_jouer);
 	// findViewById permet de récuperer l'objet correspondant à une vue
 
-
-
     playButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 			//On peut mettre ici toutes les actions à déclancher quand on appuit sur playButton
-
-			
-			//Ici on lance une nouvelle activitée nommée Plateau
-            Intent transition = new Intent(MainActivity.this, Plateau.class);
-            startActivity(transition);
         }
     });
+```
+#### Nouvelle activitée
+
+```java
+	//Ici on lance une nouvelle activitée nommée Plateau
+    Intent transition = new Intent(this, Plateau.class);
+    startActivity(transition);
 ```
 
 
@@ -173,7 +175,7 @@ Lorsque l'on a plusieurs boutons du même type et/ou que l'on souhaite leur fair
 On peut par la suite l'utiliser comme ceci
 
 ```java
-	pieceButton_1_3.setOnClickListener(new CaseListener(1,3));
+	pieceButton[1][3].setOnClickListener(new CaseListener(1,3));
 ```
 
 ## Logique du jeu
