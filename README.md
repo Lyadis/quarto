@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Le but de ce projet sera l'implémentation pour Android du jeu Quarto.
+Le but de ce projet sera l'implémentation pour Android du jeu [Quarto](https://fr.wikipedia.org/wiki/Quarto).
 
 ### Les règles du Quarto
 
