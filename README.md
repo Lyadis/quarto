@@ -21,7 +21,7 @@ Un joueur gagne si:
 
 ### Objectifs
 
-L'application finale sera composé d'au moins:
+L'application finale sera composée d'au moins:
 
  * Un **Menu** qui servira d'écran d'accueil et qui permettra de lancer une partie.
 
@@ -45,7 +45,7 @@ L'application finale sera composé d'au moins:
 
 ### Détails
 
- * Activez dans le bios les options de virtualisation
+ * Activez dans le BIOS les options de virtualisation
  * Ouvrez un terminal est installer les packets nécéssaires pour l'émulateur Android (AVD)
 ```
 sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
@@ -93,6 +93,26 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
  * Voir sur [OpenClassroom](https://openclassrooms.com/courses/developpez-une-application-pour-android/)
 
+```java
+
+    Button playButton = (Button) findViewById(R.id.bouton_jouer);
+	// findViewById permet de récuperer l'objet correspondant à une vue
+
+
+
+    playButton.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+			//On peut mettre ici toutes les actions à déclancher quand on appuit sur playButton
+
+			
+			//Ici on lance une nouvelle activitée nommée Plateau
+            Intent transition = new Intent(MainActivity.this, Plateau.class);
+            startActivity(transition);
+        }
+    });
+```
+
 
 ## Plateau
 
@@ -106,6 +126,29 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
  * Les images des pièces se trouvent dans `img/pieces`
  * Un layout de type TableLayout et des Widgets de type ImageButton peuvent être utilisés.
+
+Lorsque l'on a plusieurs boutons du même type et/ou que l'on souhaite leur faire déclancher des actions qui dépendent du boutons, il n'est pas très pratique de déclarer les event listener un par un. Dans ce cas on peut déclarer une classe qui implémente View.OnClickListener comme ceci: 
+
+```java
+	class CaseListener implements View.OnClickListener {
+        int x, y;
+
+        public CaseListener(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        @Override
+        public void onClick(View v) {
+            //Actions dépendant de x et y
+        }
+    }
+```
+On peut par la suite l'utiliser comme ceci
+
+```java
+	pieceButton_1_3.setOnClickListener(new CaseListener(1,3));
+```
 
 ## Premier coup
 
