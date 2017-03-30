@@ -84,7 +84,7 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
 ### Objectifs
 
- * Créer une application contenant deux activité. Un bouton présent sur la première permet, une fois activé de passer à la seconde.
+ * Créer une application contenant deux activités. Un bouton présent sur la première permet, une fois activé de passer à la seconde.
  * Utiliser le Moniteur Android pour logger le comportement de l'application.
 
 ![Menu](img/doc_mini/Menu.png)
@@ -103,14 +103,14 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
     playButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-			//On peut mettre ici toutes les actions à déclancher quand on appuit sur playButton
+			//On peut mettre ici toutes les actions à déclancher quand on appuie sur playButton
         }
     });
 ```
-#### Nouvelle activitée
+#### Nouvelle activité
 
 ```java
-	//Ici on lance une nouvelle activitée nommée Plateau
+	//Ici on lance une nouvelle activité nommée Plateau
     Intent transition = new Intent(this, Plateau.class);
     startActivity(transition);
 ```
