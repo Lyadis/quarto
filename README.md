@@ -35,7 +35,11 @@ L'application finale sera composée d'au moins:
 ![Menu](img/doc_mini/Coup.png)
 ![Menu](img/doc_mini/Fin.png)
 
+### Quelques ressources
 
+ * [Le cours OpenClassroom](https://openclassrooms.com/courses/developpez-une-application-pour-android/)
+ * [La documentation officielle (en anglais)](https://developer.android.com/)
+ * [Un autre cours en français](http://www.univ-orleans.fr/lifo/Members/Jean-Francois.Lalande/enseignement/android/cours-android.pdf)
 
 ## Installation d'Android studio
 
@@ -111,7 +115,7 @@ Décompressez la, ouvrez un terminal dans le dossier extrait, et lancez
 
 ```java
 	//Ici on lance une nouvelle activité nommée Plateau
-    Intent transition = new Intent(this, Plateau.class);
+    Intent transition = new Intent(MinActivity.this, Plateau.class);
     startActivity(transition);
 ```
 
