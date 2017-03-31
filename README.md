@@ -186,7 +186,9 @@ On peut par la suite l'utiliser comme ceci
 
  * Récupérer les images, les boutons de la main et du plateau et les mettre dans des tableaux pour y acceder facilement depuis le code.
 
- * Les classes Piece, Joueur, Partie
+ * Les classes Piece, Joueur, Jeu
+
+![ClassDiagram](img/doc/QuartoClassDiagram.png)
 
  * Les machines à état ([Aide ici](Machine.md))
 
