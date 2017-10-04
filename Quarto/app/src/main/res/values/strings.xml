@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quarto</string>
+    <string name="hello_msg">Bienvenu(e)</string>
+    <string name="play_button">Jouer</string>
+    <string name="online_button">Jouer en ligne</string>
+    <string name="empty_cell">Vide</string>
+</resources>
